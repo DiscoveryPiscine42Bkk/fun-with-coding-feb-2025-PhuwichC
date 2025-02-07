@@ -1,0 +1,36 @@
+#home{
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+img.homebg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.home {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-shadow: 0 0 5px black;
+    color: white;
+}
+h1.home{
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+p.home{
+    transform: translate(-50%, 100%);
+    font-size: 15px;
+}
+a.home{
+    transform: translate(-50%, 100%);
+    font-size: 40px;
+    padding: 70px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+a.home:hover {
+    color: #00a6eb;
+}

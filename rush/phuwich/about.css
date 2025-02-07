@@ -1,0 +1,10 @@
+#about h1, #skills h1, #experience h1, #contact h1 {
+    font-size: 28px;
+    color: #00a6eb;
+    margin-bottom: 15px;
+}
+
+#about p, #contact p {
+    font-size: 18px;
+    line-height: 1.6;
+}

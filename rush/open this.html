@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 200px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            background: #f0f0f0;
+        }
+
+        .login {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+
+        .description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .contact-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="jirapas/test.html" class="card">
+            <h1 class="card-title">Jirapas</h1>
+            <img src="jirapas/profile.jpg" alt="Profile Picture" class="profile-image">
+            <p class="login">@jtiewcha</p>
+            <p class="description">Financial Engineering</p>
+            <button class="contact-button">View Resume</button>
+        </a>
+
+        <a href="phuwich/index.html" class="card">
+            <h1 class="card-title">Phuwich</h1>
+            <img src="jirapas/profile.jpg" alt="Profile Picture" class="profile-image">
+            <p class="login">@pchontho</p>
+            <p class="description">Music Engineering</p>
+            <button class="contact-button">View Resume</button>
+        </a>
+    </div>
+</body>
+</html>

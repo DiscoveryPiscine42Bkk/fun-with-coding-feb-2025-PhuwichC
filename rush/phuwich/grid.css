@@ -1,0 +1,97 @@
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+    gap: 30px;
+    padding: 80px 10%;
+}
+section {
+    background: #222;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* about me */
+#about h1, #skills h1, #experience h1, #contact h1 {
+    font-size: 28px;
+    color: #00a6eb;
+    margin-bottom: 15px;
+}
+#about p, #contact p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Skills */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 0;
+}
+#skills li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    flex: 1 1 48%; /* 2 columns for skills items */
+}
+
+/* Experience Section */
+#experience {
+    padding: 80px 10%;
+    background: #222;
+}
+#experience h1 {
+    font-size: 28px;
+    color: #00a6eb;
+    margin-bottom: 15px;
+}
+#experience ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+    gap: 20px;
+    padding: 0;
+}
+#experience li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #333;
+}
+#experience li img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#experience li:hover, #experience li:hover img{
+    transform: scale(1.6);
+}
+
+/* Contact */
+#contact a {
+    color: #00a6eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+#contact a:hover {
+    text-decoration: underline;
+    object-fit: cover;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+    #experience ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}
