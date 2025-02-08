@@ -1,5 +1,3 @@
-let counter = 1;
-
 // Load cookies
 $(document).ready(function() {
     loadCookies();
@@ -57,7 +55,6 @@ function addTaskToDOM(taskContent, taskTime) {
     }
 
     updateCookies();
-    counter++;
 }
 
 // Update cookies
