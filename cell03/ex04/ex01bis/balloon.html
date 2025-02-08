@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root {
+            --size: 200px;
+            --color: red;
+        }
+
+        #balloon {
+            width: var(--size);
+            height: var(--size);
+            background-color: var(--color);
+            cursor: pointer;
+            margin-top: 20vh;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.1s ease-in-out;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="balloon.js" defer></script>
+</head>
+<body>
+    <div id="balloon"></div>
+</body>
+</html>

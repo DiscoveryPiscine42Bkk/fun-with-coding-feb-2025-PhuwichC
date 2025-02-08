@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #C2C5BB;
+            }
+
+            div{
+                text-align: center;
+            }
+
+            input {
+                height: 30px;
+                width: 100px;
+                margin-top: 20vh;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            select, option{
+                height: 30px;
+                width: 40px;
+            }
+
+            button{
+                margin-top: 100px;
+                height: 50px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #345830;
+                color: #C2C5BB;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #1e3f20;
+            }
+        </style>
+        <title>calculator</title>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="input1">
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input type="text" id="input2">
+        </div>
+        <button>Try Me!</button>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="calc.js" defer></script>
+    </body>
+</html>
